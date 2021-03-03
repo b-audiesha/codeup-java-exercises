@@ -61,5 +61,10 @@ boolean isTrue = true;
 //    boolean isFalse = (1 < 2) && (1 > 2);
 
     char  letter = 'a'; //must use single quotes unless your using var
+    char letter2 ='b';
+    var  charOutput = letter + letter2; // the output will give you an integer if you look up the type.
+    System.out.println(charOutput);
+//      .getClass()
+//      .getName());
  }
 }
