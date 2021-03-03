@@ -66,5 +66,17 @@ boolean isTrue = true;
     System.out.println(charOutput);
 //      .getClass()
 //      .getName());
- }
+
+    String myString = "This is my first line\nThis is my second line";
+    System.out.println(myString);
+
+    String myIndentedString = "\nThink Bold."+"\n\n\tThink Big" + "\n\n\t\tThink Different" +" \n";
+    System.out.println(myIndentedString); // looks like this ->
+  // Think Bold.
+
+    //         Think Big
+
+    //                   Think Different
+
+  }
 }
