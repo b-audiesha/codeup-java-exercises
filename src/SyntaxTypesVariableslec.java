@@ -111,16 +111,17 @@ boolean isTrue = true;
 //Casting is coercing a value of one type into another.
 // There are two types of casting, implicit casting and explicit casting.
     //=========implicit ==========//
-    int anInteger = 345; //this variable doesnt change
-    long isALong = anInteger;//this value becomes a new type
+    Integer anInteger = 345; //this variable doesnt change
+    long aLong = anInteger;//this value becomes a new type
     double aDouble =345;
     System.out.println(aDouble);
     System.out.println(anInteger);
 
+ //String coolString = "cool string";
+   //this will not work, cannot convert string class to an integer  int castingFun = (Integer)coolString;
+    var coolString = anInteger.toString();
+    System.out.println(coolString);
     //=====explicit=====//
-
-
-
 
   }
 }
