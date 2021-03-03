@@ -78,5 +78,49 @@ boolean isTrue = true;
 
     //                   Think Different
 
+    int num =1; // we declared num as a integer so you cant put it into a string unless you put it into a variable
+    //you can reassign the value as long as it is the same type but you assign it a different type of data
+   //  boolean myBool= '1'; the string is not a boolean... so this will not work.
+     boolean myBool = false;
+
+//While technically it is allowed to use identifiers with underscores, dollar signs, or digits,
+// we discourage the use of any of these.
+// You should use camelCase for variable and method names, and PascalCase for class names.
+
+                                                            //Arithmetic Expressions
+    //Binary vs. Unary
+
+    //An arithmetic expression consists of operands and arithmetic operators.
+    //Binary operators operate on two operands
+    //Unary operators operate on one operand
+    //Order of Precedence
+
+    //Increment
+    //
+    // a++ or ++a
+    int i = (1 + 1);
+    System.out.println("First Combo: " + (++i  + i++ + i++));
+    System.out.println("Second Combo: " + (i++  + ++i  +  ++i ));
+    // and decrement
+    // a-- or --a
+    //Positive and negative
+    //Multiplication, division, and modulus
+    //Addition and subtraction
+
+    //=======Casting===========//
+//Casting is coercing a value of one type into another.
+// There are two types of casting, implicit casting and explicit casting.
+    //=========implicit ==========//
+    int anInteger = 345; //this variable doesnt change
+    long isALong = anInteger;//this value becomes a new type
+    double aDouble =345;
+    System.out.println(aDouble);
+    System.out.println(anInteger);
+
+    //=====explicit=====//
+
+
+
+
   }
 }
