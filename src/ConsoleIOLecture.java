@@ -1,40 +1,46 @@
 public class ConsoleIOLecture {
-  public static void main(String[] args) {
+  public static void main(String[ ] args) {
 
     // ================================== print() and println()
 
-    // this:
-//            System.out.println("here");
-//            System.out.println("there");
+    // this : //print line goes automatically to the next line
+    System.out.println("here");
+System.out.println("there");
 
     // is equivalent to this:
-//            System.out.print("here\n");
-//            System.out.print("there\n");
+System.out.print("here\n");
+System.out.print("there\n");
 
-    // without the newline characters, print outputs this:
-//            System.out.print("here");
-//            System.out.print("there");
+    // without the newline characters, print outputs this: // prints "herethere"
+//System.out.print("here");
+//System.out.print("there");
 
     // to concatenate, just like JS:
-//            System.out.println("Hello" + " " + "World");
+ System.out.println("Hello" + " " + "World");
 
     // ================================== printf() / .format()
 
     // Print a formatted string using the following... printf(formatString, data)
 
     // same output as print():
-//            System.out.printf("Hello");
-//            System.out.printf("World!");
+// System.out.printf("Hello");
+// System.out.printf("World!");
 
     // creating a string variable:
-//            String bigBall = "World";
-//            System.out.printf("Hello %s", bigBall);
-//            System.out.printf("Hello %S", bigBall); // all caps
+//String bigBall = "World";
+//System.out.printf("Hello %s", bigBall); // pretty similar to ${} in e6 template strings, this prints Hello World
+//System.out.printf("Hello %S", bigBall); // all caps
 
+    String firstN = "Audiesha";
+    String secondN = "Brattin";
+
+    System.out.printf("%s %s", firstN ,secondN);
     // multiple variables:
 //            int three = 3;
 //            String typeOfPetGroup = "cats";
 //            System.out.printf("I have %d %s.", three, typeOfPetGroup);
+
+    // when working with a whole number use %d when your working with a string continue to use %s.
 
     // currency:
 //            int currencyPennies = 1431;
