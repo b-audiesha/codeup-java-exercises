@@ -29,13 +29,13 @@ public class HelloWorld {
     float myNumber = 3.14f; // this prints 3.14 as long as it has an f
     System.out.println(myNumber); // wont work unless you put an f
 
-    int x = 5;
-    System.out.println(x++); //5    confused on this one
-    System.out.println(x); //6
+   // int x = 5;
+    //System.out.println(x++); //5    confused on this one
+   // System.out.println(x); //6
 
-    int y = 5;
-    System.out.println(++y); //6 confused on this one
-    System.out.println(y); //6
+   // int y = 5;
+    //System.out.println(++y); //6 confused on this one
+  //  System.out.println(y); //6
     //Try to create a variable named class. What happens?
  // var class = "" cant do it because class is a word that you cannot use
 
@@ -50,17 +50,22 @@ public class HelloWorld {
     //	at HelloWorld.main(HelloWorld.java:42)
     //int three = (int) "three"; incompatible types: java.lang.String cannot be converted to int
 
-    int x = 4;
-    x = x + 5;
+//    int x = 4;
+//    x = x + 5;
 
-    int x = 3;
-    int y = 4;
-    y = y * x;
+int x = 4;
+x += 5;
 
-    int x = 10;
-    int y = 2;
-    x = x / y;
-    y = y - x;
+    //int x = 3;
+   // int y = 4;
+   // y = y * x;
+int y =3;
+int z = 4;
+
+   // int x = 10;
+    //int y = 2;
+  //  x = x / y;
+   // y = y - x;
 
 
 
