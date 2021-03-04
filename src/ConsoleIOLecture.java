@@ -77,30 +77,29 @@ System.out.println("Please enter the month you were born in!");
 String month = sc.next();
 System.out.println("You were born in " + month);
 
-
-
-
-
     // .next() captures each input separated by a string:
-//            System.out.print("Please enter your first, middle, and last name: ");
-//            String firstName = sc.next();
-//            String lastName = sc.next();
-//            String what = sc.next();
-//
-//            System.out.println(firstName);
-//            System.out.println(lastName);
-//            System.out.println(what);
+            System.out.print("Please enter your first, middle, and last name: ");
+            String firstName = sc.next();
+            String lastName = sc.next();
+            String what = sc.next();
+
+            System.out.println(firstName);
+            System.out.println(lastName);
+            System.out.println(what);
 
     // .nextInt() captures the first valid int value:
-//            System.out.print("Please enter your age: ");
-//            int age = sc.nextInt();
-//            System.out.println(age);
+System.out.print("Please enter your age: ");
+        int age = sc.nextInt();
+       System.out.println(age);
 
     // .nextLine():
-//            System.out.print("Favorite quote: ");
-//            String quote = sc.nextLine();
-//            System.out.println(quote);
-
+ System.out.print("In the end we're all just chalk lines on the concrete \n" +
+   "Drawn only to be washed away \n" +
+   "For the time that I've been given \n" +
+   "I am what I am:  ");
+ String quote = sc.nextLine();
+System.out.println(quote);
+    System.out.println("Five Finger Death Punch");
     // Quirk of using next() then nextLine()...
     // https://stackoverflow.com/questions/13102045/scanner-is-skipping-nextline-after-using-next-or-nextfoo
     // https://coderanch.com/wiki/676482/Scanner-nextLine-gotcha
