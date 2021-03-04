@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ConsoleIOLecture {
   public static void main(String[ ] args) {
 
@@ -31,10 +33,10 @@ System.out.print("there\n");
 //System.out.printf("Hello %s", bigBall); // pretty similar to ${} in e6 template strings, this prints Hello World
 //System.out.printf("Hello %S", bigBall); // all caps
 
-    String firstN = "Audiesha";
-    String secondN = "Brattin";
-
-    System.out.printf("%s %s", firstN ,secondN);
+//    String firstN = "Audiesha";
+//    String secondN = "Brattin";
+//
+//    System.out.printf("%s %s", firstN ,secondN);
     // multiple variables:
 //            int three = 3;
 //            String typeOfPetGroup = "cats";
@@ -43,13 +45,41 @@ System.out.print("there\n");
     // when working with a whole number use %d when your working with a string continue to use %s.
 
     // currency:
-//            int currencyPennies = 1431;
-//            System.out.printf("I'll sell you swamp land for $%.2f an acre!", currencyPennies / 100.00);
+//int currencyPennies = 1431;
+//System.out.printf("I'll sell you swamp land for $%.2f an acre!", currencyPennies / 100.00);
+ // % is a place holder
+
+//    int age = 23;
+//    String name = "Fred";
+//    String state = "Texas";
+//System.out.printf("%s is from %s and is %d years old",name,state,age );
+// Fred is from Texas and is 23 years old.
+
+
 
 
     // ================================== USER INPUT
+//enter something inside of the console and it echos back.
+//Scanner sc = new Scanner(System.in);
+//String userInput = sc.next();
+//System.out.println(userInput);
 
-//        Scanner sc = new Scanner(System.in);
+//    Scanner sc = new Scanner(System.in);
+//    System.out.println("Please enter your first name!");
+//    String usersInput = sc.next();
+//    System.out.println(usersInput);
+
+//TODO: use the scanner to take in the name of the month you were born and print it back out
+            // remember to first prompt the user for the input
+
+Scanner sc = new Scanner(System.in);
+System.out.println("Please enter the month you were born in!");
+String month = sc.next();
+System.out.println("You were born in " + month);
+
+
+
+
 
     // .next() captures each input separated by a string:
 //            System.out.print("Please enter your first, middle, and last name: ");
