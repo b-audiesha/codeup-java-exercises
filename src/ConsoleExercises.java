@@ -23,17 +23,17 @@ public class ConsoleExercises {
     System.out.println(secondWord);
     System.out.println(thirdWord);
 // if you enter less than three words it gives you nothing  until you enter another word
+// Prompt a user to enter a sentence, then store that sentence in a String variable using the .next method, then display that sentence back to the user.
+System.out.println("Please enter a sentence:");
+String sentence = sc.next();
+System.out.println(sentence);
+// doesnt display all words
+//        // Rewrite the above example using the .nextLine method.
 //
-    out.println("Please enter a sentence!");
-    String sentenceString = sc.next();
-    System.out.println(sentenceString);
-// no it did not, it only returned "Hello"
-
-    // redo with next line method
-
-    System.out.print("Please enter a sentence! ");
-    String sen = sc.nextLine();
-    System.out.println(sen);
+System.out.println("Please enter a sentence:");
+String sentences = sc.nextLine();
+System.out.println(sentences);
+//
 
 
     // Calculate the perimeter and area of Codeup's classrooms.
