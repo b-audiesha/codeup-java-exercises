@@ -111,6 +111,13 @@ System.out.println(quote);
 //            String words = sc.nextLine();
 //            System.out.println(words);
 
+    /* TODO: use the scanner to take in your birthday as an integer and then name of the month you were born and print it back out
+            - remember to first prompt the user for the birthday day of the month and store as an integer
+            - next take in name of the month with .nextLine()
+            - print out the result
+            - use a fix to prevent the month name input from being skipped
+         */
+
   }
 
 }
