@@ -3,25 +3,56 @@ import java.util.Scanner;
 import static java.lang.System.*;
 
 public class ConsoleExercises {
-  public static void main(String[ ] args) {
+  public static void main(String[] args) {
     double pi = 3.14159;
-   out.format( "The value of pi is approximately " + "%.2f%n", pi);
+    out.format("The value of pi is approximately " + "%.2f%n", pi);
 
     //Prompt a user to enter a integer and store that value in an int variable using the nextInt method.
-    Scanner num = new Scanner(System.in);
-    System.out.print("Please enter s number: ");
-    int newNum = num.nextInt();
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Please enter a number: ");
+    int newNum = sc.nextInt();
     System.out.println(newNum);
 
-    Scanner words = new Scanner(System.in);
-   System.out.print("Please enter your three random words: ");
-    String firstWord = words.next();
-    String secondWord = words.next();
-    String thirdWord = words.next();
+
+    System.out.print("Please enter your three random words: ");
+    String firstWord = sc.next();
+    String secondWord = sc.next();
+    String thirdWord = sc.next();
 
     System.out.println(firstWord);
     System.out.println(secondWord);
     System.out.println(thirdWord);
 // if you enter less than three words it gives you nothing  until you enter another word
+//
+    out.println("Please enter a sentence!");
+    String sentenceString = sc.next();
+    System.out.println(sentenceString);
+// no it did not, it only returned "Hello"
+
+    // redo with next line method
+
+    System.out.print("Please enter a sentence! ");
+    String sen = sc.nextLine();
+    System.out.println(sen);
+
+
+    // Calculate the perimeter and area of Codeup's classrooms.
+    //Prompt the user to enter values of length and width of a classroom at Codeup.
+    //
+    //Use the nextLine method to get user input and parse the resulting string to a numeric type.
+    //
+    //Assume that the rooms are perfect rectangles.
+    //Assume that the user will enter valid numeric data for length and width.
+    //Display the area and perimeter of that classroom.
+    //
+    //The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.
+    out.println("Enter the Length: ");
+    String lengthInput = sc.nextLine();
+    System.out.println("Enter the width: ");
+    String widthInput = sc.nextLine();
+    double length = Double.parseDouble(lengthInput);
+    double width = Double.parseDouble(widthInput);
+    out.println("The area is: " + (length * width) + ".");
+    out.println("The perimeter is: " + (length * 2 + width * 2) + ".");
   }
 }
