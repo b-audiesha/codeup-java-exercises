@@ -42,35 +42,88 @@ public class ControlFlowExercises {
     for (long x = 2; x < 1000000; x = x * x) {
       System.out.println(x);
     }
-    //Write a program that prints the numbers from 1 to 100.
 
-    for (int x = 1; x <= 100; x++) {
+
+    for (int x = 1; x <= 100; x++) {  //Write a program that prints the numbers from 1 to 100.
       if (x % 15 == 0) {
-        System.out.println("FizzBuzz");
+        System.out.println("FizzBuzz"); //For numbers which are multiples of both three and five: print “FizzBuzz”.
       } else if (x % 5 == 0) {
-        System.out.println("Buzz");
+        System.out.println("Buzz"); //For the multiples of five: print “Buzz”.
       }
       if (x % 3 == 0) {
-        System.out.println("Fizz");
+        System.out.println("Fizz"); //For multiples of three: print “Fizz” instead of the number.
       } else System.out.println(x);
     }
 
 
     String answer;
-    Scanner scanner = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
     do {
-      System.out.println("Please Enter a Number?");
-      int userNumber = scanner.nextInt();
+      System.out.println("Please Enter a Number?"); //Prompt the user to enter an integer.
+      int userNumber = sc.nextInt();
       System.out.println("Here is your table!");
-      System.out.println("number | squared | cubed");
+      System.out.println("number | squared | cubed"); //Display a table of squares and cubes from 1 to the value entered.
       System.out.println("------- | ------- | -------");
       for (int i = 1; i <= userNumber; i += 1) {
-        System.out.printf("%6d |%7d | %d%n", i, i * i, i * i * i);
+        System.out.printf("%-6d | %-7d | %d \n", i, i * i, i * i * i);
       }
       System.out.println();
-      System.out.println("Would you like to continue? (yes/no)");
-      answer = scanner.next();
+      System.out.println("Would you like to continue? (yes/no)"); //Ask if the user wants to continue.
+      answer = sc.next();
     } while (answer.equalsIgnoreCase("yes"));
+    //The String equalsIgnoreCase() method compares the two given strings on the basis of content of the string irrespective of case of the string.
+    // It is like equals() method but doesn't check case. If any character
+    // is not matched, it returns false otherwise it returns true.
+
+    Scanner gradeScanner = new Scanner(System.in);
+    System.out.println("Are you ready to know your grade? Yes/No");
+    String input = gradeScanner.next();
+    Boolean question = input.equalsIgnoreCase("yes");
+    while (question == true) {
+      System.out.println("Please Enter a a numerical grade from 0 to 100?");
+      int enteredGrade = gradeScanner.nextInt();
+      if (enteredGrade > 94) {
+        System.out.println("A +");
+        System.out.println("Would you like to enter another grade? (Yes/No)");
+        input = gradeScanner.next();
+        question = input.equalsIgnoreCase("yes");
+      } else if (enteredGrade < 95 && enteredGrade > 89) {
+        System.out.println("A");
+        System.out.println("Would you like to enter another grade? (Yes/No)");
+        input = gradeScanner.next();
+        question = input.equalsIgnoreCase("yes");
+      } else if (enteredGrade < 90 && enteredGrade > 84) {
+        System.out.println("B +");
+        System.out.println("Would you like to enter another grade? (Yes/No)");
+        input = gradeScanner.next();
+        question = input.equalsIgnoreCase("yes");
+      } else if (enteredGrade < 85 && enteredGrade > 79) {
+        System.out.println("B");
+        System.out.println("Would you like to enter another grade? (Yes/No)");
+        input = gradeScanner.next();
+        question = input.equalsIgnoreCase("yes");
+      } else if (enteredGrade < 80 && enteredGrade > 73) {
+        System.out.println("C +");
+        System.out.println("Would you like to enter another grade? (Yes/No)");
+        input = gradeScanner.next();
+        question = input.equalsIgnoreCase("yes");
+      } else if (enteredGrade < 74 && enteredGrade > 69) {
+        System.out.println("C");
+        System.out.println("Would you like to enter another grade? (Yes/No)");
+        input = gradeScanner.next();
+        question = input.equalsIgnoreCase("yes");
+      } else if (enteredGrade < 70 && enteredGrade > 60) {
+        System.out.println("D");
+        System.out.println("Would you like to enter another grade? (Yes/No)");
+        input = gradeScanner.next();
+        question = input.equalsIgnoreCase("yes");
+      } else {
+        System.out.println("Sorry, you failed! (F) ");
+        System.out.println("Would you like to enter another grade? (Yes/No)");
+        input = gradeScanner.next();
+        question = input.equalsIgnoreCase("yes");
+      }
+    }
   }
 }
 
