@@ -1,5 +1,5 @@
-import java.util.Formatter;
 import java.util.Scanner;
+
 
 //For all of the following exercises, create a new class named ControlFlowExercises
 // with a main method. After each exercise, commit your changes,
@@ -7,11 +7,11 @@ import java.util.Scanner;
 public class ControlFlowExercises {
   public static void main(String[] args) {
 
-    int i = 5; //Create an integer variable i with a value of 5.
-    while (i <= 15) { //Create a while loop that runs so long as i is less than or equal to 15
-      // System.out.print(i + " ");  //Each loop iteration, output the current value of i, then increment i by one.
-      i++;
-    }
+    // int i = 5; //Create an integer variable i with a value of 5.
+    // while (i <= 15) { //Create a while loop that runs so long as i is less than or equal to 15
+    // System.out.print(i + " ");  //Each loop iteration, output the current value of i, then increment i by one.
+    //   i++;
+    //  }
 // output 5 6 7 8 9 10 11 12 13 14 15
 
     //Create a do-while loop that will count by 2's starting with 0 and ending at 100. Follow each number with a new line.
@@ -49,10 +49,28 @@ public class ControlFlowExercises {
         System.out.println("FizzBuzz");
       } else if (x % 5 == 0) {
         System.out.println("Buzz");
-      }   if (x % 3 == 0) {
+      }
+      if (x % 3 == 0) {
         System.out.println("Fizz");
       } else System.out.println(x);
     }
+
+
+    String answer;
+    Scanner scanner = new Scanner(System.in);
+    do {
+      System.out.println("Please Enter a Number?");
+      int userNumber = scanner.nextInt();
+      System.out.println("Here is your table!");
+      System.out.println("number | squared | cubed");
+      System.out.println("------- | ------- | -------");
+      for (int i = 1; i <= userNumber; i += 1) {
+        System.out.printf("%6d |%7d | %d%n", i, i * i, i * i * i);
+      }
+      System.out.println();
+      System.out.println("Would you like to continue? (yes/no)");
+      answer = scanner.next();
+    } while (answer.equalsIgnoreCase("yes"));
   }
 }
 
