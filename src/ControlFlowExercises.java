@@ -7,23 +7,24 @@ import java.util.Scanner;
 public class ControlFlowExercises {
   public static void main(String[] args) {
 
-    // int i = 5; //Create an integer variable i with a value of 5.
-    // while (i <= 15) { //Create a while loop that runs so long as i is less than or equal to 15
-    // System.out.print(i + " ");  //Each loop iteration, output the current value of i, then increment i by one.
-    //   i++;
-    //  }
+    int counter1 = 5; //Create an integer variable i with a value of 5. used counter1 instead of i because i was repeated
+    while (counter1 <= 15) { //Create a while loop that runs so long as i is less than or equal to 15
+      System.out.print(counter1 + "  ");  //Each loop iteration, output the current value of i, then increment i by one. The spaces make it move vertically.
+      counter1++;
+    }
 // output 5 6 7 8 9 10 11 12 13 14 15
 
-    //Create a do-while loop that will count by 2's starting with 0 and ending at 100. Follow each number with a new line.
-    int counter = 0;
+    //Create a do-while loop that will count by 2's starting
+    // with 0 and ending at 100. Follow each number with a new line.
+    int counter = 0; //used counter instead of i because i was repeated
     do {
-      System.out.println(counter);
+      System.out.println(counter); //"println prints to new line
       counter += 2; //count by 2's
     } while (counter <= 100); // and ending at 100
 
     int counterTwo = 100;
     do {
-      System.out.println(counterTwo);
+      System.out.println(counterTwo); //"println prints to new line
       counterTwo -= 5; //Alter your loop to count backwards by 5's
     } while (counterTwo >= -10); //from 100 to -10.
     // Create a do-while loop that starts at 2, and displays
@@ -33,6 +34,7 @@ public class ControlFlowExercises {
       System.out.println(squared);
       squared = squared * squared; //the number squared
     } while (squared < 1000000); //is less than 1,000,000
+
 
     //Refactor the previous two exercises to use a for loop instead
 
@@ -71,10 +73,10 @@ public class ControlFlowExercises {
       System.out.println("Would you like to continue? (yes/no)"); //Ask if the user wants to continue.
       answer = sc.next();
     } while (answer.equalsIgnoreCase("yes"));
-    //The String equalsIgnoreCase() method compares the two given strings on the basis of content of the string irrespective of case of the string.
+    //The String equalsIgnoreCase() method compares the two given strings on the basis of
+    // content of the string irrespective of case of the string.
     // It is like equals() method but doesn't check case. If any character
     // is not matched, it returns false otherwise it returns true.
-
 
 
     Scanner gradeScanner = new Scanner(System.in);
@@ -120,7 +122,7 @@ public class ControlFlowExercises {
         input = gradeScanner.next();
         question = input.equalsIgnoreCase("yes");
       } else {
-        System.out.println("Do you want to tell your parents ? \n" + "Or should I ?  \n" +"Because honestly,this is getting really old.");
+        System.out.println("Do you want to tell your parents ? \n" + "Or should I ?  \n" + "Because honestly,this is getting really old.");
 //        System.out.println("Would you like to enter another grade? (Yes/No)");
         input = gradeScanner.next();
         question = input.equalsIgnoreCase("yes");
