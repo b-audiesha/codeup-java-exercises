@@ -75,10 +75,12 @@ public class ControlFlowExercises {
     // It is like equals() method but doesn't check case. If any character
     // is not matched, it returns false otherwise it returns true.
 
+
+
     Scanner gradeScanner = new Scanner(System.in);
     System.out.println("Are you ready to know your grade? Yes/No");
     String input = gradeScanner.next();
-    Boolean question = input.equalsIgnoreCase("yes");
+    boolean question = input.equalsIgnoreCase("yes");
     while (question == true) {
       System.out.println("Please Enter a a numerical grade from 0 to 100?");
       int enteredGrade = gradeScanner.nextInt();
@@ -118,8 +120,8 @@ public class ControlFlowExercises {
         input = gradeScanner.next();
         question = input.equalsIgnoreCase("yes");
       } else {
-        System.out.println("Sorry, you failed! (F) ");
-        System.out.println("Would you like to enter another grade? (Yes/No)");
+        System.out.println("Do you want to tell your parents ? \n" + "Or should I ?  \n" +"Because honestly,this is getting really old.");
+//        System.out.println("Would you like to enter another grade? (Yes/No)");
         input = gradeScanner.next();
         question = input.equalsIgnoreCase("yes");
       }
