@@ -1,8 +1,34 @@
-public class CaseyPracticeFileMethods {
-}
-//Write a method named firstChar() that takes a string as an input and returns the first letter as a character data type.
-//Write a method named secondChar() that takes a string as an input and returns the first letter as a character data type.
+public class MethodsPractice {
+  public static void main(String[] args) {
+
+
+    System.out.println(firstChar("Iced Coffee"));
+    System.out.println(secondChar("Iced Coffee"));
+    System.out.println(lastChar("Iced Coffee"));
+    System.out.println(secondToLastChar("Iced Coffee"));
+  }
+  //Write a method named firstChar() that takes a string as an input (as a parameter etc)and returns the first letter as a character data type. (char)
+  //Write a method named secondChar() that takes a string as an input and returns the first letter as a character data type.
 //Write a method named lastChar() that takes a string as an input and returns the last letter as a character data type.
+
+  public static char firstChar(String input) {
+    return input.charAt(0);
+    //String input = "Iced Coffee"; // this is a way to use hard coding to test
+    //declare at a a method what your going to get out of it
+  }
+
+  public static char secondChar(String input) {
+    return input.charAt(1);
+  }
+
+  public static char lastChar(String input) {
+    return input.charAt(input.length() - 1);
+  }
+  public static char secondToLastChar(String input) {
+    return input.charAt(input.length() - 2);
+  }
+}
+
 //Write a method named secondToLastChar() that takes a string as an input and returns the second to letter as a character data type.
 //Write a method named userWantsToContinue(). This method should prompt the user if they want to continue and then return a boolean value if the user inputs "y" or "yes".
 //Write a method named isEven() that takes in an integer and returns a boolean if the input is even or not.
