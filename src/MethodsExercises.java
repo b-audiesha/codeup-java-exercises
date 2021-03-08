@@ -1,5 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
 public class MethodsExercises {
@@ -9,6 +7,7 @@ public class MethodsExercises {
     multiply(5, 6);
     divide(8, 2);
     modulous(15, 3);
+    getInteger(1, 100);
   }
 
   public static int add(int number, int number2) {
@@ -38,15 +37,18 @@ public class MethodsExercises {
 
   public static int getInteger(int min, int  max) {
     Scanner sc = new Scanner(System.in);
-    System.out.println("Enter a input between" + 1 + "&" + 10);
+    System.out.println("Enter a input between " + min + " & " + max);
     int input = sc.nextInt();
-    if (input < 1 || input > 10) {
-      System.out.println("That is not a number between 1 & 10, please try again.");
+    if (input < min || input > max) {
+      //System.out.println("That is not a number between 1 & 100, please try again.");  dont hard code the numbers
+      System.out.println("That is not a number between " + min + " & " + max + " please try again.");
+      return getInteger(min, max);
     } else
       System.out.println("That is a valid entry,thank you!");
     return input;
   }
 }
+
 //Basic Arithmetic
 //
 //Create four separate methods. Each will perform an arithmetic operation:
