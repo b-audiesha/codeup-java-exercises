@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Bob {
-  public static void main (String[] args) {
+  public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     System.out.print("What do you want to bother your kid with today? ");
     String momSays = sc.nextLine().trim();
@@ -15,6 +15,5 @@ public class Bob {
     } else {
       System.out.println("Whatever. Ignore me then.");
     }
-
   }
 }
