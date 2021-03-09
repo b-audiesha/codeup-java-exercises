@@ -10,10 +10,10 @@ public class oopLecture {
     Person otherP1Name = p1;
     System.out.println(otherP1Name); //example "oh, that guy..oh that girl = alternative name for the same object"
     System.out.println(p1.sayHello());
-    System.out.println(p1.firstName);
-    System.out.println(p1.age);
-    System.out.printf("%s %s %d \n",
-      p1.firstName, p1.lastName, p1.age);
+//    System.out.println(p1.firstName);
+//    System.out.println(p1.age);
+//    System.out.printf("%s %s %d \n",
+//      p1.firstName, p1.lastName, p1.age);
     // prints Austin Brattin 4 %s is string %d is integer \n is the break to next line.
 
     Person p2 = new Person();
