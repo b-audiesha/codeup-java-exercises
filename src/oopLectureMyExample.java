@@ -1,4 +1,4 @@
-public class oopLecture {
+public class oopLectureMyExample {
   public static void main(String[] args) {
 
 
