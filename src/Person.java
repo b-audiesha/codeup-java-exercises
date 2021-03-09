@@ -3,5 +3,6 @@
 
    public String middleName;
    public String lastName;
+   public int age;
  }
 
