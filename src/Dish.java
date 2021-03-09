@@ -10,14 +10,14 @@ public class Dish {
     wouldRecommend = true;
   }
 
-  public void notRecommend() {
-    wouldNotRecommend = true;
-  }
+//  public void notRecommend() {
+//    wouldNotRecommend = true;
+//  }
 
   public String printSummary() {
     return "\n Cost :  " + costInCents
       + "\n Dish Name:  " + nameOfDish
-      + "\n Recommend : " + wouldNotRecommend
+      + "\n Recommend : " + wouldRecommend
       + "\n Stars: " + stars ;
 
   }

@@ -11,14 +11,14 @@ public class dishTest {
     Dish dish2 = new Dish();
     dish2.costInCents = 900;
     dish2.nameOfDish = "Okonomiyaki Fries";
-    dish2.wouldRecommend = false;
+    dish2.wouldNotRecommend = true;
     dish2.stars = 1;
     System.out.println(dish2.printSummary());
 
     Dish dish3 = new Dish();
     dish3.costInCents = 600;
     dish3.nameOfDish = "Seaweed Salads";
-    dish3.wouldRecommend = false;
+    dish3.wouldNotRecommend = true;
     dish3.stars = 2;
     System.out.println(dish3.printSummary());
   }
