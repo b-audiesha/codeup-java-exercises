@@ -7,7 +7,9 @@ public class oopLecture {
     p1.middleName = "Lawrence";
     p1.lastName= "Brattin";
     p1.age=4;
-
+    Person otherP1Name = p1;
+    System.out.println(otherP1Name); //example "oh, that guy..oh that girl = alternative name for the same object"
+    System.out.println(p1.sayHello());
     System.out.println(p1.firstName);
     System.out.println(p1.age);
     System.out.printf("%s %s %d \n",
