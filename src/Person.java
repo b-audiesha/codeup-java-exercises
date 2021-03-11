@@ -22,7 +22,6 @@ public class Person {
     System.out.printf("%s says hello!", this.name);
   }
 
-
   //Create a `main` method on the class that creates a new `Person` object and
   //tests the above methods.
   public static void main(String[] args) {
