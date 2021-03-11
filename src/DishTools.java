@@ -1,8 +1,10 @@
 public class DishTools {
  public static void main(String[] args) {
-//public final AVERAGE_COST_OF_DISH_IN_CENTS = 1300;
  }
-}
+public static int AVERAGE_COST_OF_DISH_IN_CENTS = 1300;
+
+ }
+
 
 
 //Create a class of static members (variables and methods) called DishTools
