@@ -35,7 +35,7 @@ public class Input {
       try {
         String input = scanner.nextLine();
         num = Integer.parseInt(input);
-
+//public class Exception extends Throwable {
       } catch(Exception e) {
         System.out.println("You must enter an number! ");
         return getInt(min, max);
