@@ -6,23 +6,29 @@ public class Person {
     this.name = name;
   }
 
-  public String getName(){
+  public String getName() {
 //TODO: return the person's name
     return this.name;
   }
 
-  public void setName(String name){
+  public void setName(String name) {
 //TODO: change the name property to the passed value
     this.name = name;
   }
-  public void sayHello(){
+
+  public void sayHello() {
 //TODO: print a message to the console using the person's name
-    System.out.println(this.name + "Says Ello! ");
+    System.out.println(this.name + " Says Ello! ");
 
   }
+
   // create a person object to test out methods
   public static void main(String[] args) {
     Person p = new Person("audiesha");
     p.sayHello();
+    p.setName("John");
+    p.sayHello();
+    System.out.println(p.getName());
   }
+
 }
