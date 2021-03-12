@@ -17,7 +17,7 @@ public class Input {
     return this.scanner.nextLine();
   }
   public boolean yesNo(){
-    System.out.println("Would you like to continue? [y/n]");
+    System.out.println("Would you like to continue? Type | Y or N |");
     String input = this.scanner.nextLine();
     return input.trim().equalsIgnoreCase("y") || input.trim().equalsIgnoreCase("yes");
   }
@@ -30,14 +30,14 @@ public class Input {
 
   public int getInt(int min,int max){
     while (true) {
-      System.out.printf("Please enter an integer between %d and %d", min, max);
+      System.out.printf("Please enter an number between %d and %d", min, max);
       int num;
       try {
         String input = scanner.nextLine();
         num = Integer.parseInt(input);
 
       } catch(Exception e) {
-        System.out.println("You must enter an inter.");
+        System.out.println("You must enter an number! ");
         return getInt(min, max);
       }
       if (num >= min && num <= max) {
@@ -60,7 +60,7 @@ public class Input {
     try {
       num =Integer.parseInt(input);;
     }catch(NumberFormatException nfex) {
-      System.out.println("You must enter an inter.");
+      System.out.println("You must enter an number.");
       return getInt(prompt);
     }
 
