@@ -1,4 +1,4 @@
-public class InheritanceandPolymorphismLec {
+//public class InheritanceandPolymorphismLec {
   //-- Pre-Lecture Research Questions
   //What is inheritance?
 
