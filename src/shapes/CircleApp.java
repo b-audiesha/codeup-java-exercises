@@ -1,5 +1,7 @@
 package shapes;
 import util.Input;
+
+// Dont blame me for using cookie, I am currently super hungry.
 public class CircleApp {
   public static void main(String[] args) {
     Input input = new Input();
