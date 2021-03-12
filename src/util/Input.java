@@ -2,7 +2,7 @@ package util;
 import java.util.Scanner;
 
 public class Input {
-  private Scanner scanner;
+  private final Scanner scanner;
 
   public Input(){
     this.scanner = new Scanner(System.in);
@@ -49,31 +49,31 @@ public class Input {
   public int getInt(){
     System.out.println("Choose a number");
     String input = scanner.nextLine();
-    int num = Integer.parseInt(input);
-    return num;
+    int number = Integer.parseInt(input);
+    return number;
   }
 
   public int getInt(String prompt) {
     System.out.println(prompt);
     String input = scanner.nextLine();
-    int num;
+    int number;
     try {
-      num =Integer.parseInt(input);;
+      number =Integer.parseInt(input);;
     }catch(NumberFormatException nfex) {
       System.out.println("You must enter an number.");
       return getInt(prompt);
     }
 
-    return num;
+    return number;
   }
   public double getDouble(double min,double max){
     while (true) {
       System.out.printf("Please enter a number between %f and %f", min, max);
 
       String input = scanner.nextLine();
-      double num = Double.parseDouble(input);
-      if (num >= min && num <= max)
-        return num;
+      double number = Double.parseDouble(input);
+      if (number >= min && number <= max)
+        return number;
     }
   }
 
