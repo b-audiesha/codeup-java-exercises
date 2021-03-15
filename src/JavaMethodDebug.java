@@ -5,7 +5,7 @@ public class JavaMethodDebug {
   public static int countLetters(String input, char character) {
     int charCount = 0;
     for (int i = 0; i < input.length(); i += 1) {
-      if (input.equals(String.valueOf(Character.toLowerCase(character)))) {
+      if (Character.toLowerCase(input.charAt(i)) == Character.toLowerCase(character)) {
         charCount++;
       }
     }
