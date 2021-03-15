@@ -1,6 +1,9 @@
 package OOPLecture;
 
 public class Person {
+  public String getName() {
+    return null;
+  }
 
 //        // SLIDE 3
 //        public String firstName;
