@@ -1,42 +1,26 @@
-package SimilarObjectsGroup;
-
-public class Wolf{
+package animals;
+public class Wolf extends Canine{
   private final boolean isEndangered;
   private final String nativeArea;
-  private final String sound;
-  private final String subSpecies;
-  private final String size;
-  private final String commonName;
   public Wolf(String sound, String size, String subSpecies, String commonName, boolean isEndangered, String nativeArea) {
-    this.sound = sound;
-    this.subSpecies = subSpecies;
-    this.size = size;
-    this.commonName = commonName;
+    super(size, commonName, subSpecies, sound);
     this.isEndangered = isEndangered;
     this.nativeArea = nativeArea;
   }
-  public void makeSound() {
-    System.out.println(sound + "\n");
+  public void printEmote() {
+    System.out.println("*Stares at the moon*");
   }
   public void printDelimiter(){
-    System.out.println("****************************");
-  }
-  public void printSubSpecies(){
-    System.out.printf("Sub-Species: %s\n", this.subSpecies);
-  }
-  public void printCommonName(){
-    System.out.printf("Common Name: %s\n", this.commonName);
-  }
-  public void printSize(){
-    System.out.printf("Size: %s\n", this.size);
+    System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
   }
   public void printEndangeredStatus(){
     System.out.printf("Endangered: %s\n", getEndangeredStatus());
   }
   public void printNativeArea(){
-    System.out.printf("Native Area: %s\n\n", this.nativeArea);
+    System.out.printf("Native Area: %s\n", this.nativeArea);
   }
   public void printDetails(){
+    printEmote();
     makeSound();
     printDelimiter();
     printSubSpecies();
