@@ -1,4 +1,4 @@
-package InheritanceLecture;
+package inheritanceLecture;
 
 import OOPLecture.Person;
 
