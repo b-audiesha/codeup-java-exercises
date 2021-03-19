@@ -1,7 +1,7 @@
 package movies;
-//
-//public class MoviesArray {
-//  public static Movie[] findAll() {
+public class MoviesArray {
+
+
 //    return new Movie[]{
 //      new Movie("Citizen Kane", "drama"),
 //      new Movie("Casablanca", "drama"),
@@ -106,3 +106,4 @@ package movies;
 //    };
 //  }
 //}
+}
