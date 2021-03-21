@@ -20,7 +20,10 @@ public class Arthimetic {
   public static double average(int[] array) {
     int sum = 0;
     //Advanced for loop
-    for (int i : array) sum += i;
+    for (int j = 0, arrayLength = array.length; j < arrayLength; j++) {
+      int i = array[j];
+      sum += i;
+    }
     return ((double)sum) / array.length;
 }}
 
