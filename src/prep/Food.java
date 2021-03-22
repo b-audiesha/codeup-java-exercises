@@ -1,7 +1,24 @@
 package prep;
 
 public class Food {
-}
+  private String name;
+  private String description;
+
+  public String getDescription() {
+    return description;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+  public Food(String name, String description, int calories) {
+    this.name = name; //this.name is the private value that I am attaching to food object
+    this.description = description;
+
+
+  }
+  }
 
 
 
