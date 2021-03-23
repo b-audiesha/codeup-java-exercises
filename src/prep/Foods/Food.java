@@ -1,8 +1,38 @@
-package prep;
 
-public class Food {
+package prep.Foods;
+
+public abstract class Food implements Consumable{
+
   private String name;
   private String description;
+  private int calories;
+
+  public Food(String name, String description, int calories) throws IllegalArgumentException{
+
+    if (name == null || name.equals("")){
+      throw new IllegalArgumentException(String.format("The argument %s cannot be null or empty", name));
+    }
+
+    if (description == null || description.equals("")){
+      throw new IllegalArgumentException(String.format("The argument %s cannot be null or empty", description));
+    }
+
+    if (calories <= 0){
+      throw new IllegalArgumentException(String.format("The argument %s cannot be less than 1", calories));
+    }
+
+    this.name = name;
+    this.description = description;
+    this.calories = calories;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
 
   public String getDescription() {
     return description;
@@ -12,14 +42,18 @@ public class Food {
     this.description = description;
   }
 
-  public Food(String name, String description, int calories) {
-    this.name = name; //this.name is the private value that I am attaching to food object
-    this.description = description;
-
-
-  }
+  public int getCalories() {
+    return calories;
   }
 
+  public void setCalories(int calories) {
+    this.calories = calories;
+  }
+
+  public void consume(){
+    System.out.printf("NOM NOM NOM I HEART %s\n", name);
+  }
+}
 
 
 //has private properties for String name, String description, and int calories
